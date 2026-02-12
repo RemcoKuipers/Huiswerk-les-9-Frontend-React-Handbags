@@ -7,3 +7,26 @@ button {
     text-transform: lowercase;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #BC4C2A;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    border-color: #D08169;
+    color: #D08169;
+}
+
+button + button {
+    margin-left: 12px;
+}
+
+article {
+    width: 100px;
+    position: relative;
+    text-align: center;
+    margin: 16px;
+}
