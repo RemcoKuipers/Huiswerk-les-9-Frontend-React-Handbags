@@ -5,6 +5,9 @@ import bag_1 from './assets/bag_1.png';
 import bag_2 from './assets/bag_2.png';
 import bag_3 from './assets/bag_3.png';
 import bag_4 from './assets/bag_4.png';
+import brand from './assets/brand.png';
+import our_story from './assets/our_story.png';
+import Tile from "./components/tile.jsx";
 
 function App() {
     return (
@@ -12,11 +15,11 @@ function App() {
             <h1>Handbags & Purses</h1>
 
 
-                <nav>
-                    <Button buttonText="to the collection" disabled={false}/>
-                    <Button buttonText="shop all bags" disabled={false}/>
-                    <Button buttonText="pre-orders" disabled={true}/>
-                </nav>
+            <nav>
+                <Button buttonText="to the collection" disabled={false}/>
+                <Button buttonText="shop all bags" disabled={false}/>
+                <Button buttonText="pre-orders" disabled={true}/>
+            </nav>
 
             <main>
 
@@ -49,7 +52,22 @@ function App() {
                     price="150"
                 />
             </main>
+            <footer>
+                <Tile
+                    title="The brand"
+                    text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi,
+                        fuga pariatur praesentium quia sequi similique sunt.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi,
+                        fuga pariatur praesentium quia sequi similique sunt."
 
+                />
+                <Tile image={brand} imageAlt="Afbeelding van het merk"/>
+                <Tile image={our_story} imageAlt="Afbeelding van de ontwerpers"/>
+                <Tile title="Our story"
+                      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi,
+                        fuga pariatur praesentium quia sequi similique sunt."
+                />
+            </footer>
         </div>
     )
 }
